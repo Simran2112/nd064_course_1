@@ -34,8 +34,8 @@ spec:
               port: { { .Values.containerPort } }
         resources:
             requests:
-              memory: { { Values.resources.requests.memory } }
-              cpu: { { Values.resources.requests.cpu } }
+              memory: { { .Values.resources.requests.memory } }
+              cpu: { { .Values.resources.requests.cpu } }
             limits:
-              memory: { { Values.resources.limit.memory } }
-              cpu: { { Values.resources.limit.cpu } }
+              memory: { { .Values.resources.limit.memory } }
+              cpu: { { .Values.resources.limit.cpu } }
