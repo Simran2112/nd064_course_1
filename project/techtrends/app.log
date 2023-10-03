@@ -1,0 +1,10 @@
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.0.100:3111/ (Press CTRL+C to quit)
+INFO:werkzeug:192.168.0.100 - - [03/Oct/2023 00:36:03] "GET /metrics HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.100 - - [03/Oct/2023 00:36:10] "GET /healthz HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.100 - - [03/Oct/2023 00:36:14] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.100 - - [03/Oct/2023 00:36:14] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+DEBUG:app:Articles 2020 CNCF Annual Report retrieved!
+INFO:werkzeug:192.168.0.100 - - [03/Oct/2023 00:36:21] "GET /1 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.100 - - [03/Oct/2023 00:36:21] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
