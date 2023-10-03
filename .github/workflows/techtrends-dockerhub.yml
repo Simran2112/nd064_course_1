@@ -30,6 +30,6 @@ jobs:
         with:
           context: ./project
           file: ./project/Dockerfile
-          platforms: linux/amd64
+          platforms: linux/amd64, linux/arm64
           push: true
           tags: simran2121/techtrends:latest
