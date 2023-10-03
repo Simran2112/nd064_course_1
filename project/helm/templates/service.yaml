@@ -3,16 +3,16 @@ kind: Service
 metadata:
   creationTimestamp: null
   labels:
-    app: { { .Values.appname } }
-  name: { { .Values.appname } }
-  namespace: { { .Values.namespace.name } }
+    app:  {{ .Values.appname }}
+  name:  {{ .Values.appname }}
+  namespace:  {{ .Values.namespace.name }}
 spec:
   ports:
-  - port: { { .Values.service.port } }
-    protocol: { { .Values.service.protocol } }
-    targetPort: { { .Values.service.targetPort } }
+  - port:  {{ .Values.service.port }}
+    protocol:  {{ .Values.service.protocol }}
+    targetPort:  {{ .Values.service.targetPort }}
   selector:
-    app: { { .Values.appname } }
-  type: { { .Values.service.type } }
+    app:  {{ .Values.appname }}
+  type:  {{ .Values.service.type }}
 status:
   loadBalancer: {}
