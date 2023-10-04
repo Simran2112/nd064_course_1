@@ -256,3 +256,17 @@ INFO:werkzeug:2023-10-04 16:38:25,988, 172.16.10.69 - - [04/Oct/2023 16:38:25] "
 INFO:werkzeug:2023-10-04 16:38:26,006, 172.16.10.69 - - [04/Oct/2023 16:38:26] "GET / HTTP/1.1" 200 -
 INFO:werkzeug:2023-10-04 16:38:26,021, 172.16.10.69 - - [04/Oct/2023 16:38:26] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
 INFO:werkzeug:2023-10-04 16:38:27,708, 172.16.10.69 - - [04/Oct/2023 16:38:27] "GET /metrics HTTP/1.1" 200 -
+INFO:werkzeug:2023-10-04 22:06:10,475, 127.0.0.1 - - [04/Oct/2023 22:06:10] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:2023-10-04 22:06:10,485, 127.0.0.1 - - [04/Oct/2023 22:06:10] "GET /static/css/main.css HTTP/1.1" 200 -
+INFO:werkzeug:2023-10-04 22:06:10,520, 127.0.0.1 - - [04/Oct/2023 22:06:10] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:2023-10-04 22:06:17,325, 127.0.0.1 - - [04/Oct/2023 22:06:17] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:2023-10-04 22:06:25,506, 127.0.0.1 - - [04/Oct/2023 22:06:25] "GET /metrics HTTP/1.1" 200 -
+DEBUG:app:2023-10-04 22:06:29,218, Articles 2020 CNCF Annual Report retrieved!
+INFO:werkzeug:2023-10-04 22:06:29,220, 127.0.0.1 - - [04/Oct/2023 22:06:29] "GET /1 HTTP/1.1" 200 -
+INFO:werkzeug:2023-10-04 22:06:29,233, 127.0.0.1 - - [04/Oct/2023 22:06:29] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:2023-10-04 22:06:32,745, 127.0.0.1 - - [04/Oct/2023 22:06:32] "GET /metrics HTTP/1.1" 200 -
+INFO:werkzeug:2023-10-04 22:06:34,312, 127.0.0.1 - - [04/Oct/2023 22:06:34] "GET /metrics HTTP/1.1" 200 -
+DEBUG:app:2023-10-04 22:06:38,157, Articles KubeCon + CloudNativeCon 2021 retrieved!
+INFO:werkzeug:2023-10-04 22:06:38,162, 127.0.0.1 - - [04/Oct/2023 22:06:38] "GET /2 HTTP/1.1" 200 -
+INFO:werkzeug:2023-10-04 22:06:38,179, 127.0.0.1 - - [04/Oct/2023 22:06:38] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:2023-10-04 22:06:40,428, 127.0.0.1 - - [04/Oct/2023 22:06:40] "GET /metrics HTTP/1.1" 200 -
