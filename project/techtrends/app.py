@@ -25,13 +25,13 @@ def get_db_connection():
     global connection_counter
     connection = sqlite3.connect("database.db")
     connection.row_factory = sqlite3.Row
-    connection_counter += 1
     return connection
 
 
 # Function to get a post using its ID
 def get_post(post_id):
     global connection_counter
+    connection_counter += 1
     connection = get_db_connection()
     post = connection.execute("SELECT * FROM posts WHERE id = ?", (post_id,)).fetchone()
     connection.close()
@@ -47,6 +47,7 @@ app.config["SECRET_KEY"] = "your secret key"
 @app.route("/")
 def index():
     global connection_counter
+    connection_counter += 1
     connection = get_db_connection()
     posts = connection.execute("SELECT * FROM posts").fetchall()
     connection.close()
@@ -58,6 +59,8 @@ def index():
 # If the post ID is not found a 404 page is shown
 @app.route("/<int:post_id>")
 def post(post_id):
+    global connection_counter
+    connection_counter += 1
     post = get_post(post_id)
     if post is None:
         app.logger.error("Article with id %s does not exist!", post_id)
@@ -87,6 +90,7 @@ def healthz():
 @app.route("/metrics")
 def metrics():
     global connection_counter
+    connection_counter += 1
     connection = get_db_connection()
     posts = connection.execute("SELECT * FROM posts").fetchall()
     response = app.response_class(
@@ -139,6 +143,7 @@ def initialize_logger():
     handlers = [
         logging.FileHandler("app.log"),  # Writes logs to app.log file
         logging.StreamHandler(sys.stdout),  # Writes logs to stdout
+        logging.StreamHandler(sys.stderr),
     ]
 
     logging.basicConfig(

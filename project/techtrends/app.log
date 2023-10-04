@@ -224,3 +224,35 @@ INFO:werkzeug:2023-10-04 16:19:39,336, 172.16.10.69 - - [04/Oct/2023 16:19:39] "
 INFO:werkzeug:2023-10-04 16:19:39,343, 172.16.10.69 - - [04/Oct/2023 16:19:39] "GET / HTTP/1.1" 200 -
 INFO:werkzeug:2023-10-04 16:19:39,365, 172.16.10.69 - - [04/Oct/2023 16:19:39] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
 INFO:werkzeug:2023-10-04 16:19:41,420, 172.16.10.69 - - [04/Oct/2023 16:19:41] "GET /metrics HTTP/1.1" 200 -
+INFO:werkzeug:2023-10-04 16:33:10,235, 172.16.10.69 - - [04/Oct/2023 16:33:10] "GET /metrics HTTP/1.1" 200 -
+DEBUG:app:2023-10-04 16:33:15,722, Articles 2020 CNCF Annual Report retrieved!
+INFO:werkzeug:2023-10-04 16:33:15,726, 172.16.10.69 - - [04/Oct/2023 16:33:15] "GET /1 HTTP/1.1" 200 -
+INFO:werkzeug:2023-10-04 16:33:15,746, 172.16.10.69 - - [04/Oct/2023 16:33:15] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:2023-10-04 16:33:18,180, 172.16.10.69 - - [04/Oct/2023 16:33:18] "GET /metrics HTTP/1.1" 200 -
+WARNING:werkzeug:2023-10-04 16:37:36,756,  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug:2023-10-04 16:37:36,757,  * Running on http://10.212.134.143:3111/ (Press CTRL+C to quit)
+INFO:werkzeug:2023-10-04 16:37:39,724, 172.16.10.69 - - [04/Oct/2023 16:37:39] "GET /metrics HTTP/1.1" 200 -
+INFO:werkzeug:2023-10-04 16:37:41,124, 172.16.10.69 - - [04/Oct/2023 16:37:41] "GET /metrics HTTP/1.1" 200 -
+INFO:werkzeug:2023-10-04 16:37:43,147, 172.16.10.69 - - [04/Oct/2023 16:37:43] "GET /metrics HTTP/1.1" 200 -
+INFO:werkzeug:2023-10-04 16:37:44,363, 172.16.10.69 - - [04/Oct/2023 16:37:44] "GET /metrics HTTP/1.1" 200 -
+WARNING:werkzeug:2023-10-04 16:38:06,861,  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug:2023-10-04 16:38:06,861,  * Running on http://10.212.134.143:3111/ (Press CTRL+C to quit)
+INFO:werkzeug:2023-10-04 16:38:08,774, 172.16.10.69 - - [04/Oct/2023 16:38:08] "GET /metrics HTTP/1.1" 200 -
+INFO:werkzeug:2023-10-04 16:38:10,210, 172.16.10.69 - - [04/Oct/2023 16:38:10] "GET /metrics HTTP/1.1" 200 -
+INFO:werkzeug:2023-10-04 16:38:11,335, 172.16.10.69 - - [04/Oct/2023 16:38:11] "GET /metrics HTTP/1.1" 200 -
+INFO:werkzeug:2023-10-04 16:38:12,221, 172.16.10.69 - - [04/Oct/2023 16:38:12] "GET /metrics HTTP/1.1" 200 -
+INFO:werkzeug:2023-10-04 16:38:13,593, 172.16.10.69 - - [04/Oct/2023 16:38:13] "GET /metrics HTTP/1.1" 200 -
+DEBUG:app:2023-10-04 16:38:16,968, Articles 2020 CNCF Annual Report retrieved!
+INFO:werkzeug:2023-10-04 16:38:17,001, 172.16.10.69 - - [04/Oct/2023 16:38:17] "GET /1 HTTP/1.1" 200 -
+INFO:werkzeug:2023-10-04 16:38:17,019, 172.16.10.69 - - [04/Oct/2023 16:38:17] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:2023-10-04 16:38:19,098, 172.16.10.69 - - [04/Oct/2023 16:38:19] "GET /create HTTP/1.1" 200 -
+INFO:werkzeug:2023-10-04 16:38:19,111, 172.16.10.69 - - [04/Oct/2023 16:38:19] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:2023-10-04 16:38:23,601, 172.16.10.69 - - [04/Oct/2023 16:38:23] "GET /create HTTP/1.1" 200 -
+INFO:werkzeug:2023-10-04 16:38:23,620, 172.16.10.69 - - [04/Oct/2023 16:38:23] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:app:2023-10-04 16:38:25,984, Articles created 1
+INFO:werkzeug:2023-10-04 16:38:25,988, 172.16.10.69 - - [04/Oct/2023 16:38:25] "[32mPOST /create HTTP/1.1[0m" 302 -
+INFO:werkzeug:2023-10-04 16:38:26,006, 172.16.10.69 - - [04/Oct/2023 16:38:26] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:2023-10-04 16:38:26,021, 172.16.10.69 - - [04/Oct/2023 16:38:26] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:2023-10-04 16:38:27,708, 172.16.10.69 - - [04/Oct/2023 16:38:27] "GET /metrics HTTP/1.1" 200 -
