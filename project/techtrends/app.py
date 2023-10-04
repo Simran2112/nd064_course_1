@@ -18,40 +18,34 @@ from werkzeug.exceptions import abort
 # Function to get a database connection.
 # This function connects to database with the name `database.db`
 
-connection_counter = 0
 
 
 def get_db_connection():
-    global connection_counter
     connection = sqlite3.connect("database.db")
     connection.row_factory = sqlite3.Row
+    app.config['connection_count'] = app.config['connection_count'] + 1
     return connection
 
 
 # Function to get a post using its ID
 def get_post(post_id):
-    global connection_counter
-    connection_counter += 1
     connection = get_db_connection()
     post = connection.execute("SELECT * FROM posts WHERE id = ?", (post_id,)).fetchone()
     connection.close()
-    connection_counter -= 1
     return post
 
 
 # Define the Flask application
 app = Flask(__name__)
 app.config["SECRET_KEY"] = "your secret key"
+app.config['connection_count'] = 0
 
 # Define the main route of the web application
 @app.route("/")
 def index():
-    global connection_counter
-    connection_counter += 1
     connection = get_db_connection()
     posts = connection.execute("SELECT * FROM posts").fetchall()
     connection.close()
-    connection_counter -= 1
     return render_template("index.html", posts=posts)
 
 
@@ -59,8 +53,6 @@ def index():
 # If the post ID is not found a 404 page is shown
 @app.route("/<int:post_id>")
 def post(post_id):
-    global connection_counter
-    connection_counter += 1
     post = get_post(post_id)
     if post is None:
         app.logger.error("Article with id %s does not exist!", post_id)
@@ -89,18 +81,15 @@ def healthz():
 
 @app.route("/metrics")
 def metrics():
-    global connection_counter
-    connection_counter += 1
     connection = get_db_connection()
     posts = connection.execute("SELECT * FROM posts").fetchall()
     response = app.response_class(
         response=json.dumps(
-            {"db_connection_count": connection_counter, "post_count": len(posts)}
+            {"db_connection_count": app.config['connection_count'], "post_count": len(posts)}
         ),
         status=200,
         mimetype="application/json",
     )
-    connection_counter -= 1
     connection.close()
     return response
 
@@ -108,7 +97,6 @@ def metrics():
 # Define the post creation functionality
 @app.route("/create", methods=("GET", "POST"))
 def create():
-    global connection_counter
     if request.method == "POST":
         title = request.form["title"]
         content = request.form["content"]
@@ -122,7 +110,6 @@ def create():
             )
             connection.commit()
             connection.close()
-            connection_counter -= 1
             app.logger.info("Articles created %s", title)
 
             return redirect(url_for("index"))

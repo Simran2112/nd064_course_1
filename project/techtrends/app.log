@@ -270,3 +270,28 @@ DEBUG:app:2023-10-04 22:06:38,157, Articles KubeCon + CloudNativeCon 2021 retrie
 INFO:werkzeug:2023-10-04 22:06:38,162, 127.0.0.1 - - [04/Oct/2023 22:06:38] "GET /2 HTTP/1.1" 200 -
 INFO:werkzeug:2023-10-04 22:06:38,179, 127.0.0.1 - - [04/Oct/2023 22:06:38] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
 INFO:werkzeug:2023-10-04 22:06:40,428, 127.0.0.1 - - [04/Oct/2023 22:06:40] "GET /metrics HTTP/1.1" 200 -
+WARNING:werkzeug:2023-10-04 22:10:39,217,  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug:2023-10-04 22:10:39,218,  * Running on http://192.168.100.19:3111/ (Press CTRL+C to quit)
+INFO:werkzeug:2023-10-04 22:10:42,933, 127.0.0.1 - - [04/Oct/2023 22:10:42] "GET /metrics HTTP/1.1" 200 -
+INFO:werkzeug:2023-10-04 22:10:44,549, 127.0.0.1 - - [04/Oct/2023 22:10:44] "GET /metrics HTTP/1.1" 200 -
+DEBUG:app:2023-10-04 22:10:47,607, Articles KubeCon + CloudNativeCon 2021 retrieved!
+INFO:werkzeug:2023-10-04 22:10:47,658, 127.0.0.1 - - [04/Oct/2023 22:10:47] "GET /2 HTTP/1.1" 200 -
+INFO:werkzeug:2023-10-04 22:10:47,672, 127.0.0.1 - - [04/Oct/2023 22:10:47] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:2023-10-04 22:10:50,031, 127.0.0.1 - - [04/Oct/2023 22:10:50] "GET /metrics HTTP/1.1" 200 -
+WARNING:werkzeug:2023-10-04 22:12:47,067,  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug:2023-10-04 22:12:47,068,  * Running on http://192.168.100.19:3111/ (Press CTRL+C to quit)
+INFO:werkzeug:2023-10-04 22:12:51,616, 127.0.0.1 - - [04/Oct/2023 22:12:51] "GET /metrics HTTP/1.1" 200 -
+INFO:werkzeug:2023-10-04 22:12:52,905, 127.0.0.1 - - [04/Oct/2023 22:12:52] "GET /metrics HTTP/1.1" 200 -
+DEBUG:app:2023-10-04 22:12:56,029, Articles KubeCon + CloudNativeCon 2021 retrieved!
+INFO:werkzeug:2023-10-04 22:12:56,052, 127.0.0.1 - - [04/Oct/2023 22:12:56] "GET /2 HTTP/1.1" 200 -
+INFO:werkzeug:2023-10-04 22:12:56,065, 127.0.0.1 - - [04/Oct/2023 22:12:56] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:2023-10-04 22:12:57,846, 127.0.0.1 - - [04/Oct/2023 22:12:57] "GET /metrics HTTP/1.1" 200 -
+INFO:werkzeug:2023-10-04 22:13:01,079, 127.0.0.1 - - [04/Oct/2023 22:13:01] "GET /metrics HTTP/1.1" 200 -
+INFO:werkzeug:2023-10-04 22:13:02,625, 127.0.0.1 - - [04/Oct/2023 22:13:02] "GET /metrics HTTP/1.1" 200 -
+INFO:werkzeug:2023-10-04 22:13:05,059, 127.0.0.1 - - [04/Oct/2023 22:13:05] "GET /metrics HTTP/1.1" 200 -
+INFO:werkzeug:2023-10-04 22:13:06,025, 127.0.0.1 - - [04/Oct/2023 22:13:06] "GET /metrics HTTP/1.1" 200 -
+INFO:werkzeug:2023-10-04 22:13:07,122, 127.0.0.1 - - [04/Oct/2023 22:13:07] "GET /metrics HTTP/1.1" 200 -
+INFO:werkzeug:2023-10-04 22:13:08,071, 127.0.0.1 - - [04/Oct/2023 22:13:08] "GET /metrics HTTP/1.1" 200 -
+INFO:werkzeug:2023-10-04 22:13:09,031, 127.0.0.1 - - [04/Oct/2023 22:13:09] "GET /metrics HTTP/1.1" 200 -
