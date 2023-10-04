@@ -205,3 +205,22 @@ INFO:werkzeug:2023-10-04 12:48:24,405, 172.16.10.69 - - [04/Oct/2023 12:48:24] "
 INFO:werkzeug:2023-10-04 12:48:24,418, 172.16.10.69 - - [04/Oct/2023 12:48:24] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
 INFO:werkzeug:2023-10-04 12:48:50,695, 127.0.0.1 - - [04/Oct/2023 12:48:50] "GET / HTTP/1.1" 200 -
 INFO:werkzeug:2023-10-04 12:48:50,707, 127.0.0.1 - - [04/Oct/2023 12:48:50] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:2023-10-04 16:19:09,037, 172.16.10.69 - - [04/Oct/2023 16:19:09] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:2023-10-04 16:19:09,066, 172.16.10.69 - - [04/Oct/2023 16:19:09] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:2023-10-04 16:19:16,570, 172.16.10.69 - - [04/Oct/2023 16:19:16] "GET /metrics HTTP/1.1" 200 -
+DEBUG:app:2023-10-04 16:19:19,779, Articles 2020 CNCF Annual Report retrieved!
+INFO:werkzeug:2023-10-04 16:19:19,798, 172.16.10.69 - - [04/Oct/2023 16:19:19] "GET /1 HTTP/1.1" 200 -
+INFO:werkzeug:2023-10-04 16:19:19,813, 172.16.10.69 - - [04/Oct/2023 16:19:19] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:2023-10-04 16:19:23,861, 172.16.10.69 - - [04/Oct/2023 16:19:23] "GET /metrics HTTP/1.1" 200 -
+INFO:werkzeug:2023-10-04 16:19:27,384, 172.16.10.69 - - [04/Oct/2023 16:19:27] "GET /metrics HTTP/1.1" 200 -
+DEBUG:app:2023-10-04 16:19:29,972, Articles 2020 CNCF Annual Report retrieved!
+INFO:werkzeug:2023-10-04 16:19:29,977, 172.16.10.69 - - [04/Oct/2023 16:19:29] "GET /1 HTTP/1.1" 200 -
+INFO:werkzeug:2023-10-04 16:19:30,009, 172.16.10.69 - - [04/Oct/2023 16:19:30] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:2023-10-04 16:19:32,067, 172.16.10.69 - - [04/Oct/2023 16:19:32] "GET /metrics HTTP/1.1" 200 -
+INFO:werkzeug:2023-10-04 16:19:36,860, 172.16.10.69 - - [04/Oct/2023 16:19:36] "GET /create HTTP/1.1" 200 -
+INFO:werkzeug:2023-10-04 16:19:36,885, 172.16.10.69 - - [04/Oct/2023 16:19:36] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:app:2023-10-04 16:19:39,332, Articles created 1
+INFO:werkzeug:2023-10-04 16:19:39,336, 172.16.10.69 - - [04/Oct/2023 16:19:39] "[32mPOST /create HTTP/1.1[0m" 302 -
+INFO:werkzeug:2023-10-04 16:19:39,343, 172.16.10.69 - - [04/Oct/2023 16:19:39] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:2023-10-04 16:19:39,365, 172.16.10.69 - - [04/Oct/2023 16:19:39] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:2023-10-04 16:19:41,420, 172.16.10.69 - - [04/Oct/2023 16:19:41] "GET /metrics HTTP/1.1" 200 -
