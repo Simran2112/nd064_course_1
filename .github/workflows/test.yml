@@ -9,7 +9,7 @@ on:
 
 jobs:
   test-job:
-    name: Test Step
+    name: Test Step 123
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
